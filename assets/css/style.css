@@ -69,3 +69,15 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+#feedback 
+{ font-size:2em; }
+#selectable .ui-selecting 
+{ background: #FECA40; }
+#selectable .ui-selected 
+{ background: #F39814; color: rgb(255, 174, 68); }
+#selectable { 
+  list-style-type: none; margin: center; padding: 0; width: 100%; }
+#selectable li { 
+  margin: 6px; padding: 0em; font-size: 1.5em; height: 100px; };
+
+

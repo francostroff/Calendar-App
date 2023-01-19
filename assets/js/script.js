@@ -4,6 +4,19 @@ var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
 
+
+// function to select hours //
+$( function() {
+    $( "#selectable" ).selectable({
+      stop: function() {
+        var result = $( "#select-result" ).empty();
+        $( ".ui-selected", this ).each(function() {
+          var index = $( "#selectable li" ).index( this );
+          result.append( " #" + ( index + 1 ) );
+        });
+      }
+    });
+  } );
 $(document).ready(function () {
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
