@@ -1,11 +1,13 @@
-
 //js script with moment.js library
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
+var todayTime = moment().format('LTS');
+$("#currentTime").html(todayTime);
 
 
 // function to select hours //
+var selectable = $("selectable")
 $( function() {
     $( "#selectable" ).selectable({
       stop: function() {
@@ -17,7 +19,9 @@ $( function() {
       }
     });
   } );
-$(document).ready(function () {
+
+
+  $(document).ready(function () {
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
         // Get nearby values of the description in JQuery

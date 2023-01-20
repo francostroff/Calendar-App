@@ -4,6 +4,11 @@ body {
   line-height: 1;
 }
 
+#toggle {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+}
 textarea {
   background: transparent;
   border: none;
@@ -52,6 +57,9 @@ textarea {
   color: white;
 }
 
+ol {
+  background-color: #06aed5;
+}
 .future {
   background-color: #77dd77;
   color: white;
@@ -72,12 +80,11 @@ textarea {
 #feedback 
 { font-size:2em; }
 #selectable .ui-selecting 
-{ background: #FECA40; }
+{ background: #bbbbbb; }
 #selectable .ui-selected 
-{ background: #F39814; color: rgb(255, 174, 68); }
+{ background: #00A878;color: #ececec; }
 #selectable { 
   list-style-type: none; margin: center; padding: 0; width: 100%; }
 #selectable li { 
   margin: 6px; padding: 0em; font-size: 1.5em; height: 100px; };
-
 
