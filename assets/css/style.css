@@ -57,9 +57,6 @@ textarea {
   color: white;
 }
 
-ol {
-  background-color: #06aed5;
-}
 .future {
   background-color: #77dd77;
   color: white;
@@ -77,14 +74,4 @@ ol {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-#feedback 
-{ font-size:2em; }
-#selectable .ui-selecting 
-{ background: #bbbbbb; }
-#selectable .ui-selected 
-{ background: #00A878;color: #ececec; }
-#selectable { 
-  list-style-type: none; margin: center; padding: 0; width: 100%; }
-#selectable li { 
-  margin: 6px; padding: 0em; font-size: 1.5em; height: 100px; };
 
