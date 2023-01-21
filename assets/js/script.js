@@ -6,7 +6,10 @@ $("#currentDay").html(todayDate);
 var todayTime = moment().format('LTS');
 $("#currentTime").html(todayTime);
 
-$(document).ready(function () {
+var calendarTime = moment().calendar(); 
+$("#currentDay").html(calendarTime);
+
+  $(document).ready(function () {
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
         // Get nearby values of the description in JQuery
@@ -35,8 +38,7 @@ $(document).ready(function () {
             // if timeNow is >  timeBlock class=.past
             // if timeNow is = timeBlock class=.present
             // if timeNow is <  timeBlock class=.future
-             var timeBlock = (todayTime);
-            
+             var timeBlock = $(".time-block");
             
  for (var i = 0; i < timeBlock.length; i++) {}
             if (blockTime < timeNow) {
@@ -70,6 +72,7 @@ $(document).ready(function () {
     });
     $(document).on('click', '.saveBtn', function(){
         alert("Saved! Check the console.");
+
       });
     // Get item from local storage if any
     $("#hour8 .description").val(localStorage.getItem("hour8"));
