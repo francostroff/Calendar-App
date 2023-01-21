@@ -3,11 +3,10 @@
 
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
-var todayTime = moment().format('LTS');
+var todayTime = moment().format(' HH:mm');
 $("#currentTime").html(todayTime);
 
-var calendarTime = moment().calendar(); 
-$("#currentDay").html(calendarTime);
+
 
   $(document).ready(function () {
     // saveBtn click listener 
@@ -18,11 +17,11 @@ $("#currentDay").html(calendarTime);
      //   var currentTime = moment().format('LTS');
         
    //      prevent default
-  //       event.preventDefault();
+  //       event.preventDefault();s
  //        Save text in local storage
       localStorage.setItem(time, text);
       alert(text)
-        
+        s
     })
    
     function timeTracker() {
