@@ -6,19 +6,14 @@ $("#currentDay").html(todayDate);
 var todayTime = moment().format(' HH:mm');
 $("#currentTime").html(todayTime);
 
-
-
-  $(document).ready(function () {
+$(document).ready(function () {
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
         // Get nearby values of the description in JQuery
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
         console.log(text);
-     //   var currentTime = moment().format('LTS');
         
-   //      prevent default
-  //       event.preventDefault();s
  //        Save text in local storage
       localStorage.setItem(time, text);
       alert(text)
