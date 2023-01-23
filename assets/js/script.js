@@ -14,7 +14,7 @@ $(document).ready(function () {
         var time = $(this).parent().attr("id");
         console.log(text);
         
- //        Save text in local storage
+ //  Save text in local storage
       localStorage.setItem(time, text);
       alert(text)
     })
@@ -24,7 +24,6 @@ $(document).ready(function () {
          // loop over time blocks
         $(".time-block").each(function () {
             var currentTime = moment().hour();
-
             var blockTime = parseInt($(this).attr("id").split("-")[1]);
 
     // To check the time and add the classes for background indicators
@@ -45,7 +44,6 @@ $(document).ready(function () {
                 $(this).removeClass("present");
                 $(this).removeClass("past");
                 $(this).addClass("future");
-
             }
         })
     }
@@ -63,8 +61,7 @@ $(document).ready(function () {
     $(document).on('click', '.saveBtn', function(){
         alert("Saved! Check the console.");
        
-
-      });
+    });
     // Get item from local storage if any
     $("#hour-8 .description").val(localStorage.getItem("hour-8"));
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
