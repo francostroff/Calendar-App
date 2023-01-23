@@ -3,7 +3,7 @@
 ## Challenge 7
 
 ### Repository URL - https://github.com/francostroff/Calendar-App
-### Live Website URL - 
+### Live Website URL - https://francostroff.github.io/Calendar-App/
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. 
