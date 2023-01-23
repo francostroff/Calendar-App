@@ -1,4 +1,4 @@
-# Third-Party APIs: Work Day Scheduler
+# Third-Party APIs: Daily Planner App
 
 ## Challenge 7
 
